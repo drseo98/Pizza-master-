@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA MASTER</title>
+  <style>
+    body {
+      background:rgb(146, 236, 146);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Title */
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+    .pizza { color: green; }
+    .master { color: red; }
+
+    hr {
+      border: none;
+      border-top: 2px solid #000000;
+      margin: 15px auto;
+      width: 80%;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 15px 0;
+      color: #111;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      padding: 40px 10%;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      background: #fafada;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .menu-text {
+      text-align: left;
+    }
+
+    .menu-text h3 {
+      margin: 5px 0;
+      font-size: 1.2rem;
+      color: #e74c3c;
+    }
+
+    .menu-text p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 5px 0;
+    }
+   .extras {
+      display: flex;        
+      gap: 100px;            
+      justify-content: center;
+    }
+
+    .appitizers,.frieditems, .sweets {
+      width: 300px;
+      padding: 20px;
+      background:  #fafada;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      color: rgb(0, 0, 0);
+    }
+
+    .extras h2 {
+      margin-bottom: 10px;
+    }
+
+    .extras p {
+      color: #555;
+    }
+     footer {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0,0,0,0.8);
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Title -->
+  <h1><span class="pizza">PIZZA</span> <span class="master">MASTER</span></h1>
+  <hr>
+  <h2>MENU</h2>
+  <hr>
+
+  <!-- Menu Items -->
+  <div class="menu-grid">
+    <!-- First 8 (original) -->
+    <center> <h2>Special Pizzas</h2></center>
+    <div class="menu-item"><img src="pizza pic.jpg"><div class="menu-text"><h3>Master special </h3><p>Fresh mozzarella, basil & tomato sauce. <br>Price : s-499 M-1190 L-1600 xl-2550</p></div></div>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Malai Boti</h3><p>Spicy pepperoni with melting cheese. <br>Price : s-499 M-1190 L-1600 xl-2550</p></div></div>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Peri Peri Pizza</h3><p>Loaded with olives, peppers & mushrooms. <br>Price : s-499 M-1190 L-1600 xl-2550</p></div></div>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Steak Supreme</h3><p>Smoky BBQ chicken with onions. <br>Price : s-499 M-1190 L-1600 xl-2550</p></div></div>
+    <div class="menu-item"><img src="pizza pic.jpg"><div class="menu-text"><h3>Chief's Special</h3><p>Cheddar, mozzarella, parmesan & gouda. <br>Price : s-499 M-1190 L-1600 xl-2550</p></div></div>
+    <H2>Traditional Pizzas</H2>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Chicken Tikka </h3><p>Special smoked chicken pizza.</p></div></div>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Chicken Fajita</h3><p>Loaded with beef, chicken & sausages.</p></div></div>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Fajita Sicilion</h3><p>Hot jalapenos with bell peppers & cheese.</p></div></div>
+
+    <!-- Extra 20 items -->
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Chicken Supreme</h3><p>Simple Traditional pizza with typical toppings <br>Prices : S-480 M-1120 L-1480 XL-2399</p></div></div>
+    <div class="menu-item"><img src="cheese and vegie lover pizza.jpg"><div class="menu-text"><h3>EURO</h3><p>Creamy white sauce pwith grilled chicken. <br>Prices : S-480 M-1120 L-1480 XL-2399</p></div></div>
+    <div class="menu-item"><img src="cheese and vegie lover pizza.jpg"><div class="menu-text"><h3>Chesse lover & veggies lover</h3><p>Riich in cheese or veggies  <br>Prices : S-480 M-1120 L-1480 XL-2399</p></div></div>
+    <br> <h2>Stuffer Pizzas </h2>
+    <div class="menu-item"><img src="general pizza.jpg"><div class="menu-text"><h3>Chicken Chesse Stuffer </h3><p>Edges stuffed with chicken and chesse <br>Price : M-1630 L-2270 </p></div></div>
+    <div class="menu-item"><img src="kebab pizza.jpg"><div class="menu-text"><h3>Chicken Kebab Stuffer</h3><p>Edges stuffed with kebab<br>Price : M-1630 L-2270</p></div></div>
+    <div class="menu-item"><img src="cheese and vegie lover pizza.jpg"><div class="menu-text"><h3>Chesse Stuffer</h3><p>Edges stuffed with only Chesse.<br>Price : M-1630 L-2270</p></div></div>
+    <h2>Square Pizzas </h2>
+    <div class="menu-item"><img src="square pizza.jpg"><div class="menu-text"><h3>Master Special </h3><p>NOt round pizza , square shapped pizza with more flavoure and extras <br>Price: S-650 M-1430 L-1999.</p></div></div>
+    <div class="menu-item"><img src="square pizza.jpg"><div class="menu-text"><h3>Malai Boti </h3><p>NOt round pizza , square shapped pizza with more flavoure and extras <br>Price: S-650 M-1430 L-1999.</p></div></div>
+    <div class="menu-item"><img src="square pizza.jpg"><div class="menu-text"><h3>Behari Kebab</h3><p>NOt round pizza , square shapped pizza with more flavoure and extras <br>Price: S-650 M-1430 L-1999.</p></div></div>
+    <h2>Crown Crust Pizzas </h2>
+    <div class="menu-item"><img src="crown crust pizza.jpg"><div class="menu-text"><h3>Master special </h3><p>Edges designes like a crown which is stuffed with cheese and chicken  <br> Price : M-1630 L-2270 XL-2650 </p></div></div>
+    <div class="menu-item"><img src="crown crust pizza.jpg"><div class="menu-text"><h3>Malai Boti </h3><p>Edges designes like a crown which is stuffed with cheese and chicken  <br> Price : M-1630 L-2270 XL-2650</p></div></div><br>
+    <h2>Pastas </h2>
+    <div class="menu-item"><img src="pasta generl.jpg"><div class="menu-text"><h3>Master Special</h3><p>Master special pasta with some secret flavours and toppings <br>Price : F1-490 F2-810 
+    </p></div></div>
+    <div class="menu-item"><img src="pasta generl.jpg"><div class="menu-text"><h3>Macroni Pasta</h3><p>Typical Macroni pasta with some special sauce and toppins <br>Price : F1-490 F2-810 .</p></div></div>
+    <div class="menu-item"><img src="creamy pasta.jpg"><div class="menu-text"><h3>Creamy Pasta </h3><p> Pasta mixed with our special creamy sauces and topings <br>Price : F1-490 F2-810</p></div></div>
+    <div class="menu-item"><img src="creamy pasta.jpg"><div class="menu-text"><h3>Crunchy Pasta </h3><p>Pennie pasta with special sauce and crunchy friend chicken as toppings. <br>Price : F1-550 F2-890</p></div></div><br>
+    <h2>Wings</h2>
+    <div class="menu-item"><img src="wings.jpg"><div class="menu-text"><h3>Oven Baked Wings </h3><p>Golden baked wings  with dips <br>Price : 6 PCS-380  9 PCS-510   18 PCS 1130  </p></div></div>
+    <div class="menu-item"><img src="wings.jpg"><div class="menu-text"><h3>Peri Peri Wings</h3><p> Special flavoured wings <br>Price : 6 PCS-380  9 PCS-510   18 PCS 1130 </p></div></div>
+    <div class="menu-item"><img src="wings.jpg"><div class="menu-text"><h3>Malai Boti wings</h3><p> Malai boti flavoured wings <br>Price : 6 PCS-430  9 PCS-640   18 PCS-1280 </p></div></div>
+<h2>Sandwich</h2>
+    <div class="menu-item"><img src="sandwich.jpg"><div class="menu-text"><h3>Master Special </h3><p>With special sauces and fillings <br>Price : 750</p></div></div>
+        <div class="menu-item"><img src="sandwich.jpg"><div class="menu-text"><h3>Malai Boti </h3><p>Filled with malai boti flavoured Fillings <br>Price : 800</p></div></div><br>
+<h2>Kids Meal </h2>
+                <div class="menu-item"><img src="kido meal.jpg"><div class="menu-text"><h3>Kids meal 1 </h3><p>10 PCS nuggets, 1 scoop Ice cream, 250 ml drink & gift <br>Price : 600</p></div></div>
+        <div class="menu-item"><img src="kido meal.jpg"><div class="menu-text"><h3>Kids Meal 2  </h3><p>1 small pasta, 1 scope ice-cream 250 ml drink& gift <br>Price : 600</p></div></div>
+        <div class="menu-item"><img src="kido meal.jpg"><div class="menu-text"><h3>Malai Boti </h3><p>1 small pizza, 1 scoop ice-cream, 250 ml drink & gift <br>Price : 600</p></div></div>
+        <div class="menu-item"><img src="kido meal.jpg"><div class="menu-text"><h3>Malai Boti </h3><p>Chicken burger with frise, 1 scoop ice-cream, 250ml drink & gift  <br>Price : 600</p></div></div>
+  </div>
+  <div class="extras">
+  <div class=" appitizers">
+<h2>Appetizer</h2>
+<ul>
+    <li>Master PLatter[Rs.850]</li>
+    <li>Malai boti platter[rs.900]</li>
+    <li>Chicken spin roll [Rs.580]</li>
+    <li>Shawarma Spin roll [Rs.600]</li>
+    <li>Chicken Chesse stick [Rs.520]</li>
+</ul>
+</div>
+<div class="frieditems">
+    <h2>Fried Items</h2>
+    <ul>
+        <li>Nuggets RS.320  </li>
+        <li>French Frise RS.300</li>
+        <li>Loaded Frise  RS.550</li>
+       <li> Zinger Burger RS.450</li>
+        <li>Chicken Burger  RS.350 </li>
+       <li> Grilled Burger 550 </li>
+    </ul>
+</div>
+<div class="sweets">
+    <h2>Desserts</h2>
+    <ul>
+        <li>Chocolate Brownie RS.350</li>
+        <LI> Brownie With Ice cream RS.400</LI>
+        <li>Single scope Ice cream RS.150</li>
+        <LI>Double Scoope Ice cream RS.250 </LI>
+    </ul>
+</div>
+</div>
+
+ <footer>
+    <p>© 2025 Pizza Master. All rights reserved.</p>
+  </footer>
+</body>
+</html>
